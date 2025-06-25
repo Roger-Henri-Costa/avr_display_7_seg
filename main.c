@@ -27,9 +27,9 @@ int main(void)
     disp7seg_init();
     while( 1 )
     {
-		disp7seg(15);
+		disp7seg(i);
 		_delay_ms(500);
         // Incremento limitado: 0..15
-		i = ++i % 15;
+		i = ++i % 16;
     }
 }
